@@ -1,5 +1,5 @@
 :root {
-    --bg-color-1 : #7B768D;
+    --bg-color-1 : #fa9f27;
 }
 
 * {
@@ -24,4 +24,20 @@ a {
 
 .bg-color-1 {
     background-color: var(--bg-color-1);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: 25px;
+}
+
+.nav-a {
+    font-size: 20px;
+    background: linear-gradient(to right, #6ef81e, rgb(35, 92, 247)); 
+    background-clip: text;
+  -webkit-background-clip: text;
+} 
+.nav-a:hover {
+    border-bottom: 2px solid rgb(241, 52, 141);
 }
