@@ -55,10 +55,10 @@ footer {
 
 .errorContainer h1 {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
-    transform: translate(-50%);
-    color: white;
+    transform: translateX(-50%);
+    color: rgb(250, 20, 20);
     font-size: 60px;
     font-weight: bolder;
 }
