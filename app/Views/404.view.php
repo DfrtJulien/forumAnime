@@ -5,7 +5,7 @@
     <div class="errorContainer">
         <h1>Erreur 404</h1>
         <img src="/public//img//erreur404.png" alt="erreur 404 plus fort que luffy" class="img-error">
-        <button class="errorBtn" href="/"><a href="/">Revenir a l'accueil</a></button>
+        <button class="errorBtn"><a href="/">Revenir a l'accueil</a></button>
     </div>
    
 
