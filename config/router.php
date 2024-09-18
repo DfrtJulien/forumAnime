@@ -23,5 +23,5 @@ if (array_key_exists($uri, $routes)) {
     // http_response_code(404) indique que la page n'a pas été trouvée
     http_response_code(404);
     // Inclusion du fichier 404.php pour gérer l'affichage d'une page d'erreur personnalisée
-    // require_once(__DIR__ . '/../app/Controllers/404.php');
+    require_once(__DIR__ . '/../app/Controllers/404Controller.php');
 }
