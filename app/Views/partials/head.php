@@ -23,18 +23,32 @@
                 <li class="nav-item">
                     <a class="nav-link  nav-a" aria-current="page" href="/">Accueil</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-a" href="/register">Inscription</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-a" href="/connection">Connexion</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-a" href="/logout">Deconnexion</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-a" href="/users">Utilisateurs</a>
-                </li>
+                <?php
+                if ($_SESSION) {
+                ?>
+                    <li class="nav-item">
+                        <a class="nav-link nav-a" href="/logout">Deconnexion</a>
+                    </li>
+                    <?php
+                    if ($_SESSION['user']['role'] == "Admin") {
+                    ?>
+                        <li class="nav-item">
+                            <a class="nav-link nav-a" href="/users">Utilisateurs</a>
+                        </li>
+                    <?php
+                    }
+                } else {
+                    ?>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-a" href="/register">Inscription</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-a" href="/connection">Connexion</a>
+                    </li>
+                <?php
+                }
+                ?>
             </ul>
         </div>
     </div>
