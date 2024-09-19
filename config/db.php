@@ -1,9 +1,9 @@
 <?php
 
 try {
-    // ici je me connecte a ma base de données
+    //Ici je me connecte à la base de données
     $mysqlClient = new PDO('mysql:host=localhost;dbname=forum;charset=utf8', 'root');
-} catch(Exception $e){
-    // ici j'attrape l'erreur
+} catch (Exception $e){
+    //Ici je récupere et affiche l'erreur
     die('ERREUR : ' . $e->getMessage());
 }

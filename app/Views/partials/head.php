@@ -24,7 +24,7 @@
                     <a class="nav-link  nav-a" aria-current="page" href="/">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-a" href="#">Features</a>
+                    <a class="nav-link nav-a" href="/register">Inscription</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-a" href="#">Pricing</a>
@@ -33,5 +33,4 @@
         </div>
     </div>
 </nav>
-
 <body>
