@@ -14,7 +14,7 @@ if(isset($_POST['pseudo'])){
         $mail = htmlspecialchars($_POST['mail']);
         $password = htmlspecialchars($_POST['password']);
         $register_date = date('Y-m-d');
-        $role = 2;
+        $role = 1;
 
         //Verifie si l'utilisateur existe:
         //On prepare la requete:
