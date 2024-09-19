@@ -27,10 +27,14 @@
                     <a class="nav-link nav-a" href="/register">Inscription</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-a" href="#">Pricing</a>
+                    <a class="nav-link nav-a" href="/connection">Connexion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-a" href="/logout"></i> Deconnexion</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
 <body>

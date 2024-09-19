@@ -128,6 +128,43 @@ footer {
     margin-top: 5px;
 }
 
+.connectionContainer{
+    width: 30%;
+    margin: auto;
+}
+
+.connectionLogo {
+    width: 60px;
+    height: 80px;
+    margin-left: 30px;
+}
+
+.connectionForm {
+    width: 100%;
+    border-radius: 15px;
+    padding: 15px;
+    background-image: url(/public/img/connectionBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.connectionBtn {
+    background-color: rgb(37, 74, 155);
+    border: none;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 15px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.connectionBtn:hover {
+    background-color: rgb(22, 52, 116);
+}
+
+
 
 @media screen and (max-width: 762px){
 
