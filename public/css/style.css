@@ -27,8 +27,7 @@ a {
 }
 
 footer {
-    /* position: absolute;
-    bottom: 0; */
+    margin-top: 50px;
     padding: 25px;
 }
 
@@ -82,4 +81,65 @@ footer {
 
 .errorBtn:hover {
     background-color: rgb(211, 31, 31);
+}
+
+.registerContainer{
+    width: 30%;
+    margin: auto;
+}
+
+.registerLogo {
+    width: 50px;
+    height: 80px;
+    margin-left: 30px;
+}
+
+.registerForm {
+    width: 100%;
+    border-radius: 15px;
+    padding: 15px;
+    background-image: url(/public/img/registerBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.registerBtn {
+    background-color: rgb(219, 26, 107);
+    border: none;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 15px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.registerBtn:hover {
+    background-color: rgb(161, 19, 78);
+}
+
+.registerErrorP {
+    background-color: rgb(245, 62, 62);
+    border-radius: 10px;
+    color: rgb(255, 247, 247);
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 762px){
+
+    .registerContainer{
+        width: 100%;
+    }
+
+    .registerForm {
+        width: 100%;
+    }
+
+    .registerErrorP {
+        font-size: 16px;
+    }
 }
