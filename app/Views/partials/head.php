@@ -30,7 +30,10 @@
                     <a class="nav-link nav-a" href="/connection">Connexion</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-a" href="/logout"></i> Deconnexion</a>
+                    <a class="nav-link nav-a" href="/logout">Deconnexion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-a" href="/users">Utilisateurs</a>
                 </li>
             </ul>
         </div>
