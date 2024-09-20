@@ -181,6 +181,29 @@ footer {
     margin-bottom: 50px;
 }
 
+.homeImg {
+    width: 100%;
+    position: relative;
+    
+}
+
+.homeImg img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+
+.homeImg h1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 35px;
+}
+
 @media screen and (max-width: 762px){
 
     .registerContainer{
