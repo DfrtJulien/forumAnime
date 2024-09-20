@@ -35,6 +35,10 @@
                         <li class="nav-item">
                             <a class="nav-link nav-a" href="/users">Utilisateurs</a>
                         </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link nav-a" href="/subject">Ajout sujet</a>
+                        </li>
                     <?php
                     }
                 } else {
