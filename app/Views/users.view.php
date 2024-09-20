@@ -20,7 +20,7 @@ require_once(__DIR__ . "/partials/head.php");
             ?>
                     <tr>
                         <th scope="row"><?= $userId++ ?></th>
-                        <td><a><?= $user['pseudo'] ?></a></td>
+                        <td><a href="/profile?id=<?= $user['id'] ?>"><?= $user['pseudo'] ?><a></td>
                     </tr>
             <?php
                 }
@@ -47,7 +47,7 @@ require_once(__DIR__ . "/partials/head.php");
             ?>
                     <tr>
                         <th scope="row"><?= $adminId++ ?></th>
-                        <td><?= $admin['pseudo'] ?></td>
+                        <td><a href="/profile?id=<?= $admin['id'] ?>"><?= $admin['pseudo'] ?><a></td>
                     </tr>
             <?php
                 }
