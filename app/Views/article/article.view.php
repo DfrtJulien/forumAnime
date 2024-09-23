@@ -15,8 +15,16 @@
 <?php
     if($_SESSION['user']['idUser'] == $article['user_id']){
 ?>
-    <a href="/editArticle?id=<?= $article['id'] ?>" class="btn btn-primary">Modifier</a> 
+    <a href="/editArticle?id=<?= $article['id'] ?>" class="btn colorYellow">Modifier</a> 
 <?php
+}
+if($_SESSION['user']['idUser'] == $article['user_id'] || $_SESSION['user']['role'] == "Admin"){
+    ?>
+         <form action="" method="POST">
+            <input type="hidden" id="idDelete" name="idDelete" value="<?= $article['id'] ?>">
+            <button type="submit" class="btn">Supprimer</button>
+        </form>
+    <?php
 }
     require_once(__DIR__ . "/../partials/footer.php");
 ?>
