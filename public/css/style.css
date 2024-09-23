@@ -206,6 +206,11 @@ footer {
     color: rgb(30, 205, 236);
 }
 
+.subjectContainer {
+    width: 60%;
+    margin: 25px auto;
+}
+
 @media screen and (max-width: 762px){
 
     .registerContainer{

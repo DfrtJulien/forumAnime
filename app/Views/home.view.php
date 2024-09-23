@@ -13,9 +13,11 @@
     
     foreach($subjects as $subject){
         ?>
+         <div class="subjectContainer">
         <h3><?= $subject['title'] ?></h3>
         <p><?= $subject['description'] ?></p>
         <a href="/articles?id=<?= $subject['id'] ?>" class="btn btn-primary    ">Aller voir le sujet</a>
+        </div>
     <?php
     }
 }
