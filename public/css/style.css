@@ -206,9 +206,94 @@ footer {
     color: rgb(30, 205, 236);
 }
 
-.subjectContainer {
-    width: 60%;
-    margin: 25px auto;
+.subjectContainer, .subjectTitle, .articlesContainer, .articlesTitle {
+    width: 40%;
+    margin:  auto;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.subjectContainer, .articlesContainer {
+    border-top: none;
+}
+
+.subjectTitle {
+    background-color: rgb(47, 179, 240);
+    color: white;
+}
+
+.subjectTitle, .articlesTitle {
+    border-bottom: none;
+    margin-top: 30px;
+}
+
+.subjectDescription {
+    padding: 15px 25px;
+}
+
+.subjectSeeMore {
+    margin-left: 50px;
+    background-color: #362cc7;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.subjectSeeMore:hover {
+    background-color: #493cf5;
+}
+
+.theArticles{
+    font-size: 50px;
+    color: #0b6f97;
+    margin-bottom: 35px;
+}
+
+.addArticleBtn {
+    margin-top: 35px;
+    background-color: #2071eb;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.addArticleBtn:hover {
+    background-color: #1256a3;
+}
+
+.articlesTitle {
+    background-color: #493cf5;
+    color: white;
+}
+
+.dateArticle {
+    opacity: 0.5;
+}
+
+.seeArticle {
+    padding: 10px;
+    color: white;
+    background-color: #0b6f97;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.seeArticle:hover {
+    background-color: #105c7a;
+}
+
+.articlesImgContainer img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    height: 450px;
+}
+
+.articlesImgContainer {
+    height: 450px;
 }
 
 @media screen and (max-width: 762px){
@@ -223,5 +308,13 @@ footer {
 
     .registerErrorP {
         font-size: 16px;
+    }
+
+    .homeImg h1 {
+        left: 50px;
+    }
+
+    .subjectContainer, .subjectTitle {
+        width: 90%;
     }
 }
