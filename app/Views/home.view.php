@@ -10,12 +10,12 @@
             <h1>Bienvenue <?= $_SESSION['user']['pseudo'] ?></h1>
             <?php
     if($subjects){
-
     
     foreach($subjects as $subject){
         ?>
         <h3><?= $subject['title'] ?></h3>
         <p><?= $subject['description'] ?></p>
+        <a href="/articles?id=<?= $subject['id'] ?>" class="btn btn-primary    ">Aller voir le sujet</a>
     <?php
     }
 }
