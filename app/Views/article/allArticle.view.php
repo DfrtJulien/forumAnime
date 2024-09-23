@@ -2,6 +2,7 @@
     require_once(__DIR__ . "/../partials/head.php");
 ?>
     <h1>Les articles</h1>
+    <a href="/addArticle?subject=<?= $subject ?>" class="btn btn-primary">Ajouter un article</a>
     <div class="col-8 mx-auto d-block mt-5">
         <?php
         if(isset($articles)){
@@ -33,7 +34,10 @@
         }else {
 ?>
     <h1>Il n'y a pas d'article encore</h1>
+
 <?php
     }
+?>
+<?php
     require_once(__DIR__ . "/../partials/footer.php");
 ?>

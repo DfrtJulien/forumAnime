@@ -19,7 +19,8 @@ $routes = [
     '/profile' => 'UserProfileController.php',
     '/subject' => 'SubjectController.php',
     '/articles' => 'AllArticleController.php',
-    '/article' => 'ArticleController.php'
+    '/article' => 'ArticleController.php',
+    '/addArticle' => "AddArticleController.php"
 ];
 
 
