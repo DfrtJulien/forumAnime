@@ -18,6 +18,8 @@ $routes = [
     '/users' => 'UsersController.php',
     '/profile' => 'UserProfileController.php',
     '/subject' => 'SubjectController.php',
+    '/articles' => 'AllArticleController.php',
+    '/article' => 'ArticleController.php'
 ];
 
 
