@@ -1,5 +1,5 @@
 :root {
-    --bg-color-1 : #fa9f27;
+    --bg-color-1: #fa9f27;
 }
 
 * {
@@ -33,18 +33,19 @@ footer {
 
 .nav-a {
     font-size: 20px;
-    background: linear-gradient(to right, #6ef81e, rgb(35, 92, 247)); 
+    background: linear-gradient(to right, #6ef81e, rgb(35, 92, 247));
     background-clip: text;
     -webkit-background-clip: text;
     transition: all 0.2s ease;
     padding-bottom: 0;
-} 
+}
+
 .nav-a:hover {
     border-bottom: 3px solid rgb(247, 54, 144);
     border-bottom-left-radius: 15px 5px;
     border-bottom-right-radius: 15px 5px;
 }
- 
+
 .errorContainer {
     width: 60%;
     margin: auto;
@@ -83,7 +84,7 @@ footer {
     background-color: rgb(211, 31, 31);
 }
 
-.registerContainer{
+.registerContainer {
     width: 30%;
     margin: auto;
 }
@@ -128,7 +129,7 @@ footer {
     margin-top: 5px;
 }
 
-.connectionContainer{
+.connectionContainer {
     width: 30%;
     margin: auto;
 }
@@ -184,7 +185,7 @@ footer {
 .homeImg {
     width: 100%;
     position: relative;
-    
+
 }
 
 .homeImg img {
@@ -206,14 +207,18 @@ footer {
     color: rgb(30, 205, 236);
 }
 
-.subjectContainer, .subjectTitle, .articlesContainer, .articlesTitle {
+.subjectContainer,
+.subjectTitle,
+.articlesContainer,
+.articlesTitle {
     width: 40%;
-    margin:  auto;
+    margin: auto;
     border: 2px solid black;
     padding: 15px;
 }
 
-.subjectContainer, .articlesContainer {
+.subjectContainer,
+.articlesContainer {
     border-top: none;
 }
 
@@ -222,7 +227,8 @@ footer {
     color: white;
 }
 
-.subjectTitle, .articlesTitle {
+.subjectTitle,
+.articlesTitle {
     border-bottom: none;
     margin-top: 30px;
 }
@@ -244,10 +250,14 @@ footer {
     background-color: #493cf5;
 }
 
-.theArticles{
-    font-size: 50px;
-    color: #0b6f97;
+.theArticles {
+    font-size: 90px;
+    font-weight: bolder;
+    color: #f3f7f8;
     margin-bottom: 35px;
+    position: absolute;
+    top: 25%;
+    left: 5%;
 }
 
 .addArticleBtn {
@@ -289,16 +299,79 @@ footer {
     background-position: center;
     background-size: cover;
     z-index: -1;
-    height: 450px;
+    height: 550px;
 }
 
-.articlesImgContainer {
-    height: 450px;
+.article {
+    width: 80%;
+    margin: auto;
+    background-image: url(/public/img/articleBg.png);
+    background-position: center;
+    background-size: cover;
 }
 
-@media screen and (max-width: 762px){
+.article h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    color: white;
+    padding: 15px;
+    border-bottom: 2px solid white;
+    font-weight: bolder;
+}
 
-    .registerContainer{
+.articleContent {
+    font-size: 25px;
+    padding: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+.article .dateArticle {
+    opacity: 0.8;
+}
+
+.article .dateArticle,
+.articleCreator {
+    color: white;
+    padding: 15px;
+}
+
+.creatorLink {
+    font-weight: bolder;
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+.creatorLink:hover {
+    font-size: 20px;
+}
+
+.articleBtnContainer {
+    display: flex;
+    padding: 15px;
+}
+
+.editBtn,
+.deleteBtn {
+    padding: 15px;
+    margin-left: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.editBtn {
+    background-color: #e1ee2d;
+    color: rgb(90, 88, 88);
+}
+
+.deleteBtn {
+    background-color: #eb1c1c;
+    color: rgb(219, 214, 214);
+}
+
+@media screen and (max-width: 762px) {
+
+    .registerContainer {
         width: 100%;
     }
 
@@ -314,7 +387,14 @@ footer {
         left: 50px;
     }
 
-    .subjectContainer, .subjectTitle {
+    .subjectContainer,
+    .subjectTitle,
+    .articlesContainer,
+    .articlesTitle {
         width: 90%;
+    }
+
+    .theArticles {
+        font-size: 50px;
     }
 }
