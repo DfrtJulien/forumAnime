@@ -322,7 +322,7 @@ footer {
 .articleContent {
     font-size: 25px;
     padding: 15px;
-    color: white;
+    color: rgb(240, 229, 231);
     font-weight: 600;
 }
 
@@ -367,6 +367,57 @@ footer {
 .deleteBtn {
     background-color: #eb1c1c;
     color: rgb(219, 214, 214);
+}
+
+.commentContainer {
+    width: 50%;
+    margin: auto;
+}
+
+.articleComment {
+    border: 1px solid black;
+    width: 60%;
+    margin: 60px auto;
+}
+
+.articleComment h2 {
+    margin: 35px 15px;
+    font-size: 50px;
+}
+
+.comment {
+    border: 2px solid black;
+    margin: 25px auto;
+}
+
+.commentLabel {
+    font-size: 20px;
+}
+
+.commentArea {
+    font-size: 20px;
+}
+
+.addComment {
+    margin: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #eb1c1c;
+}
+
+.comment h3 {
+    padding: 25px;
+    background-color: var(--bg-color-1);
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.comment p {
+    padding: 25px 15px;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 762px) {
