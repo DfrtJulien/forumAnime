@@ -42,6 +42,11 @@ require_once(__DIR__ . "/../partials/head.php");
                 <label for="comment" class="form-label commentLabel">Ecriver votre commentaire :</label>
                 <textarea class="form-control commentArea" name="comment"></textarea>
                 <button class="addComment" type="submit">Ajouter un commentaire</button>
+                <?php if (isset($arrayError['content'])) {
+                ?>
+                    <p class='text-danger'><?= $arrayError['content'] ?></p>
+                <?php
+                } ?>
             </form>
         </div>
         <?php
@@ -53,19 +58,26 @@ require_once(__DIR__ . "/../partials/head.php");
             <div class="comment">
                 <h3><?= $comment['pseudo'] ?></h3>
                 <p><?= $comment['content'] ?></p>
+                <p class="dateArticle">Date de création : <?= $comment['creation_date'] ?></p>
                 <?php
-                if (!empty($article['modification_date'])) {
+                if (!empty($comment['modification_date'])) {
                 ?>
-                    <p class="dateArticle">Date de modification : <?= $article['modification_date'] ?></p>
+                    <p class="dateArticle">Date de modification : <?= $comment['modification_date'] ?></p>
                 <?php
                 }
-
-                if ($_SESSION['user']['id'] == $comment['id_user'] || $_SESSION['user']['role'] == "Admin") {
+                if ($_SESSION['user']['idUser'] == $comment['id_user']) {
                 ?>
-                    <form action="" method="POST">
-                        <input type="hidden" id="idDelete" name="idCommentDelete" value="<?= $comment['idcomment'] ?>">
-                        <button class="deleteBtn" type="submit" class="btn">Supprimer</button>
-                    </form>
+                    <div class="articleBtnContainer">
+                        <a class="editBtn" href="/editComment?id=<?= $comment['idComment'] ?>" class="btn colorYellow">Modifier</a>
+                    <?php
+                }
+                if ($_SESSION['user']['idUser'] == $comment['id_user'] || $_SESSION['user']['role'] == "Admin") {
+                    ?>
+                        <form action="" method="POST">
+                            <input type="hidden" id="idDelete" name="idCommentDelete" value="<?= $comment['idComment'] ?>">
+                            <button class="deleteBtn" type="submit" class="btn">Supprimer</button>
+                        </form>
+                    </div>
                 <?php
                 }
                 ?>
