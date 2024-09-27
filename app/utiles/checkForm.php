@@ -53,6 +53,10 @@ function checkFormat($nameInput, $value)
             if (!preg_match($regexContent, $value)) {
                 $arrayError['content'] = 'Merci de renseigner un contenu correcte!';
             }
+        case 'comment':
+            if (!preg_match($regexContent, $value)) {
+                $arrayError['comment'] = 'Merci de renseigner un contenu correcte!';
+            }
     }
 }
 

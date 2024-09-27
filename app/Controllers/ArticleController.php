@@ -16,7 +16,7 @@ if (isset($_GET['id'])) {
     $article = $queryStatement->fetch();
 
 
-    $queryComment = "SELECT `comment`.`id_article`,`comment`.`content`,`comment`.`modification_date`,`comment`.`id_user`, `comment`.`id` AS idcomment, `article`.`id`, `user`.`pseudo`, `user`.`id`
+    $queryComment = "SELECT `comment`.`id_article` ,`comment`.`content`, `comment`.`creation_date`,`comment`.`modification_date`,`comment`.`id_user`, `comment`.`id` AS idComment, `article`.`id`, `user`.`pseudo`, `user`.`id`
     FROM `comment` 
     INNER JOIN `article` ON `comment`.`id_article` = `article`.`id` 
     INNER JOIN `user` ON `comment`.`id_user` = `user`.`id` 
@@ -64,6 +64,7 @@ if (isset($_POST['comment'])) {
         $queryStatement->bindValue(':id_user', $idUser);
 
         $queryStatement->execute();
+        echo "<meta http-equiv='refresh' content='0'>";
     };
 }
 
