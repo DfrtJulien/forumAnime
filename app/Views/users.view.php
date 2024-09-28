@@ -1,9 +1,11 @@
 <?php
 require_once(__DIR__ . "/partials/head.php");
 ?>
-<h1>Les utilisateurs du forum</h1>
+
+
 
 <div class="usersContainer my-5">
+    <h1 class="my-5">Les utilisateurs du forum :</h1>
     <h2>Les utilisateurs</h2>
     <table class="table table-dark">
         <thead>
