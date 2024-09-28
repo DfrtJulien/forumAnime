@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --bg-color-1: #fa9f27;
 }
@@ -6,6 +8,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+p,
+a {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .logo {
@@ -29,6 +48,8 @@ a {
 footer {
     margin-top: 50px;
     padding: 25px;
+    position: sticky;
+    bottom: 0;
 }
 
 .nav-a {
@@ -262,20 +283,26 @@ footer {
 
 .addArticleBtn {
     margin-top: 35px;
-    background-color: #2071eb;
+    background-color: #38cf12;
     color: white;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     transition: all 0.3s;
 }
 
-.addArticleBtn:hover {
-    background-color: #1256a3;
+.addArticleBtn:hover,
+.addComment:hover {
+    background-color: #086b26;
 }
 
 .articlesTitle {
     background-color: #493cf5;
     color: white;
+}
+
+.addArticleContainer {
+    width: 40%;
+    margin: auto;
 }
 
 .dateArticle {
@@ -360,13 +387,15 @@ footer {
 }
 
 .editBtn {
-    background-color: #e1ee2d;
+    background-color: #104cb9;
     color: rgb(90, 88, 88);
+    color: white;
 }
 
 .deleteBtn {
     background-color: #eb1c1c;
     color: rgb(219, 214, 214);
+    margin-bottom: 20px;
 }
 
 .commentContainer {
@@ -375,7 +404,6 @@ footer {
 }
 
 .articleComment {
-    border: 1px solid black;
     width: 60%;
     margin: 60px auto;
 }
@@ -401,10 +429,11 @@ footer {
 .addComment {
     margin: 10px;
     border: none;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     color: white;
-    background-color: #eb1c1c;
+    background-color: #38da10;
+    transition: all 0.3s ease;
 }
 
 .comment h3 {
@@ -417,6 +446,35 @@ footer {
 
 .comment p {
     padding: 25px 15px;
+    font-size: 20px;
+}
+
+.commentUser{
+    transition: all 0.3s ease;
+}
+
+.commentUser:hover {
+    color: #0b6f97;
+    text-decoration: underline;
+}
+
+.userProfil {
+    width: 60%;
+    margin: 80px auto;
+    border: 2px solid black;
+}
+
+.userName {
+    background-color: #fa9f27;
+    padding: 25px;
+    color: white;
+}
+
+.userInfo {
+    padding: 20px;
+}
+
+.userInfo p {
     font-size: 20px;
 }
 
@@ -441,11 +499,19 @@ footer {
     .subjectContainer,
     .subjectTitle,
     .articlesContainer,
-    .articlesTitle {
+    .articlesTitle,
+    .articleComment,
+    .commentContainer,
+    .usersContainer,
+    .userProfil {
         width: 90%;
     }
 
     .theArticles {
         font-size: 50px;
+    }
+
+    .articleComment h2 {
+        font-size: 30px;
     }
 }

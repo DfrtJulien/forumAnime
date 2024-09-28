@@ -56,7 +56,7 @@ require_once(__DIR__ . "/../partials/head.php");
         foreach ($comments as $comment) {
         ?>
             <div class="comment">
-                <h3><?= $comment['pseudo'] ?></h3>
+                <h3><a class="commentUser" href="/profile?id=<?= $article['user_id'] ?>"><?= $comment['pseudo'] ?></a></h3>
                 <p><?= $comment['content'] ?></p>
                 <p class="dateArticle">Date de création : <?= $comment['creation_date'] ?></p>
                 <?php
@@ -82,12 +82,14 @@ require_once(__DIR__ . "/../partials/head.php");
                 }
                 ?>
             </div>
+
         <?php
         }
         ?>
 
     <?php
     }
+
     ?>
 </div>
 <?php

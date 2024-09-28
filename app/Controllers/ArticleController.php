@@ -33,7 +33,7 @@ if (isset($_GET['id'])) {
         $queryStatementDelete = $mysqlClient->prepare($queryDelete);
         $queryStatementDelete->bindValue(':id_article', $id_article);
         $queryStatementDelete->execute();
-        redirectToRoute('/');
+        echo "<meta http-equiv='refresh' content='0'>";
     }
 
     if (isset($_POST["idCommentDelete"])) {
@@ -42,7 +42,7 @@ if (isset($_GET['id'])) {
         $queryStatementDelete = $mysqlClient->prepare($queryDelete);
         $queryStatementDelete->bindValue(':id_comment', $id_comment);
         $queryStatementDelete->execute();
-        redirectToRoute('/');
+        echo "<meta http-equiv='refresh' content='0'>";
     }
 }
 
